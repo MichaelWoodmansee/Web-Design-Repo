@@ -1,0 +1,52 @@
+body {
+  background-image: url(wall.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#header
+{
+    width: 98%;
+    height: 500px;
+    text-align: center;
+    background-color: gray;
+    
+    margin: auto;
+}
+#main
+{
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    
+}
+#left
+{
+    width: 35%;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+   
+}
+#middle
+{
+    width: 65%;
+    height: 400px;
+    background-color: deepskyblue;
+    float: left;
+    
+    
+   
+}
+
+
+#footer
+{
+    width: 80%;
+    height: 40px;
+    
+    text-align: center;
+    margin: auto;
+   
+   
+}
