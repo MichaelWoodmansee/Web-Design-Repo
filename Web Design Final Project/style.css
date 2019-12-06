@@ -1,0 +1,65 @@
+body
+{  
+    background-image: url("BGI.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#logo
+{
+
+font-family: 'Philosopher', sans-serif;
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Marck Script', cursive;
+*/
+}
+#lan
+{
+    float: left;
+    width: 250px;
+    height:auto;
+}
+#main
+{
+    color:whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+}
+#main1
+{
+    color:whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    padding-bottom: 3%;
+    border: round;
+}
+/*start of the nav bar*/
+
+
+/*end of the nav bar*/
+
+/*start of the main body div*/
+ol.b {
+  list-style-type: square;
+}
+
+ /*scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

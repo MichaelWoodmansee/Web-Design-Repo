@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Js max</title>
+
+   
+</head>
+<body>
+
+<input type="number" id = "num1">
+<input type="number" id = "num2">
+<input type="number" id = "num3">
+<button onclick="max()">Find Max  (Math.max)</button>
+<button onclick="max2()">Find Max (if / else statements)</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+function max() 
+{
+var x = document.getElementById("num1").value;
+var y = document.getElementById("num2").value;
+var z = document.getElementById("num3").value;
+
+ 
+document.getElementById("demo").innerHTML = Math.max(x, y,z);
+}
+function max2() 
+{
+var x = document.getElementById("num1").value;
+var y = document.getElementById("num2").value;
+var z = document.getElementById("num3").value;
+
+if(x>y && x>z)
+{
+    document.getElementById("demo2").innerHTML =x ;    
+}
+if(x<y && y>z)
+{
+    document.getElementById("demo2").innerHTML =y ;    
+}
+if( y<z && x<z)
+{
+    document.getElementById("demo2").innerHTML =z ;    
+}
+
+}
+</script>
+</body>
+</html>

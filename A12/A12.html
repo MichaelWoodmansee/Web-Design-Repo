@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>A12 Js</title>
+   
+
+
+<body>
+    
+    <a href="https://www.albany.edu/" id ="ualbany" target="_blank">Go to Homepage</a>
+    <button onclick=getlink()>Get Link</button>
+    <br>
+    <p>Enter the name of your favarite song.</p>
+    <input type="text" id="Userinput">
+    <button onclick=test()>Click Me</button>
+    <button onclick=JSstyle()>Change color and text size</button>
+    
+    <br>
+    <p>Enter First and Last Name</p>
+    <input type="text" id="firstname">
+    <input type="text" id="lastname">
+    <button onclick=sayhello()>Get Name</button>
+    
+    
+    
+    <p id = "demo"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+<script> 
+    function test()
+    {
+        var x= document.getElementById("Userinput").value;
+        document.getElementById("demo").innerHTML="This is your input: "+x;
+    }
+    function JSstyle()
+    {
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.fontSize = "xx-large";
+    }
+    function getlink()
+    {
+         var x = document.getElementById("ualbany").href; 
+         alert(x);
+    }
+    function sayhello()
+    {
+        var x= document.getElementById("firstname").value;
+        var y= document.getElementById("lastname").value;
+        document.getElementById("demo3").innerHTML="Hello "+x+" "+y;
+    }
+    
+    
+</script>
+    
+</body>
+</html>

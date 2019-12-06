@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Cooking Techniques</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Marck+Script|Philosopher&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="myjs.js"></script>
+<body>
+    
+    <!--nav bar divs-->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" id ="logo" href="#">Cooking Tips</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Homepage.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recipes.html">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+
+    <!--main body divs-->
+    
+    <div id ="main1" class="container bg-dark" style="color: whitesmoke">
+        <br>
+        <br>
+        <h4>Technique List</h3>
+        <div class="dropdown">
+  <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+    Translate
+  </button>
+  <div class="dropdown-menu">
+   
+<div class="container" id="lan">   
+<div class="card bg-dark">
+      <div class="card-body text-center">
+       <div id="google_translate_element" style="height: 5%"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() 
+{
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+         <input class="form-control" id="myInput" type="text" placeholder="Search different cooking techniques....">
+         <br>
+         <br>
+        <table class="table table-bordered " style="color: whitesmoke">
+    <thead>
+      <tr>
+        <th>Technique</th>
+        <th>Description</th>
+        <th>Level of Difficulty</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Searing</td>
+        <td>"Searing refers to the browning of food – usually pertaining to meat or fish – in a pan over high heat"</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Steaming</td>
+        <td>"The consistent flow of hot air is what gently cooks the food in this cooking technique"</td>
+        <td>Easy</td>
+      </tr>
+      <tr>
+        <td>Baking</td>
+        <td>"Baking simply means cooking food in the oven—usually uncovered—using indirect, dry heat."</td>
+        <td>Medium to Hard</td>
+      </tr>
+      <tr>
+        <td>Grilling</td>
+        <td>"Grilling is the technique of cooking foods over live fire over direct heat, usually fairly high heat."</td>
+        <td>Easy to Medium</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div> 
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+    
+    </div>
+    
+ 
+</body>
+</html>
