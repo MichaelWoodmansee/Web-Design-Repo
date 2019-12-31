@@ -1,0 +1,68 @@
+body
+{
+    background-image: linear-gradient(-90deg, gray, #1fc8db);
+    background-size: cover;
+    height: auto;
+
+}
+#create 
+{
+  background-color: white;
+ 
+  font-size: 20px;
+  
+
+}
+#logo
+{
+
+font-family: 'Philosopher', sans-serif;
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Marck Script', cursive;
+*/
+}
+
+.jumbotron
+{
+   color: white;
+   width: 70%;
+   
+}
+#vp
+{
+    text-align: center;
+    cursor: pointer;
+    
+}
+#so
+{
+    text-align: center;
+    cursor: pointer;
+   
+}
+
+
+/*the code below is for the user.php and something i am still working on (Mike w) */
+#ec
+{
+    width: 150px; 
+    font-weight: bold; 
+    font-size:30px;
+}
+#ec2
+{
+    background-color:red;  
+}
+
+
+
+
+
+
+
+
+
+
+
